@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="Configuration.Listeners"/>
+    </listeners>
+
+    <test name="Search On Google">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="Data" value="Java"/>
+        <classes>
+            <class name="Test.DemoTest"/>
+        </classes>
+    </test>
+
+    <!--    <test name="Login into HRM">-->
+    <!--        <parameter name="browserName" value="chrome"></parameter>-->
+    <!--        <parameter name="username" value="Admin"/>-->
+    <!--        <parameter name="password" value="admin123"/>-->
+    <!--        <classes>-->
+    <!--            <class name="Test.LoginHRM"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Login into HRM Through Excel Data">-->
+    <!--        <parameter name="browserName" value="chrome"></parameter>-->
+    <!--        <classes>-->
+    <!--            <class name="Test.LoginHRMThroughExcelData"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Forgot Password">-->
+    <!--        <parameter name="browserName" value="chrome"></parameter>-->
+    <!--        <classes>-->
+    <!--            <class name="Test.ForgotPassword"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Logout Module">-->
+    <!--        <parameter name="browserName" value="chrome"></parameter>-->
+    <!--        <classes>-->
+    <!--            <class name="Test.LogoutModule"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Add User">-->
+    <!--        <parameter name="browserName" value="chrome"></parameter>-->
+    <!--        <classes>-->
+    <!--            <class name="Test.AddUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+</suite>
